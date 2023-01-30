@@ -8,23 +8,23 @@
   </head>
   <body>
     <div class="container">
-      <div class="color">
-        <button value="black">Black</button>
-        <button value="random">Random</button>
-        <button value="erase">Erase</button>
-        <button value="reset">Reset</button>
+      <h1>Pixel Arts</h1>
+      <div class="flex-container">
+        <div class="options">
+          <button value="black">Draw with <span>Black</span> pixels</button>
+          <button value="random">Draw with <span>Random</span> colors</button>
+          <button value="erase">Erase</button>
+          <button value="reset">Reset</button>
+          <div>
+            <label for="myRange">Resolution</label>
+            <input type="range" min="2" max="100" class="slider" id="myRange" />
+            <output id="rangevalue">16 x 16</output>
+          </div>
+        </div>
+        <div class="grid"></div>
       </div>
-      <label for="myRange">Resolution</label>
-      <input
-        type="range"
-        min="2"
-        max="100"
-        class="slider"
-        id="myRange"
-      />
-      <output id="rangevalue">16 x 16</output>
     </div>
-    <div class="grid"></div>
+
     <script src="script.js"></script>
   </body>
 </html>

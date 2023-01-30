@@ -4,7 +4,7 @@ const sizeSlider = document.querySelector(".slider");
 const resolution = document.querySelector("#rangevalue");
 let color = "black";
 let size = 16;
-let click = true;
+let click = false;
 
 modes.forEach((mode) => mode.addEventListener("click", changeColor));
 sizeSlider.value = size;
