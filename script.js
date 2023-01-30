@@ -8,7 +8,6 @@ let click = false;
 
 modes.forEach((mode) => mode.addEventListener("click", changeColor));
 sizeSlider.value = size;
-grid.onmousedawn = () => {};
 
 sizeSlider.onchange = (e) => {
   size = e.target.value;
@@ -19,7 +18,6 @@ sizeSlider.onchange = (e) => {
 
 function changeColor(e) {
   value = e.target.value;
-  console.log(value);
   if (value === "random") color = "random";
   else if (value === "black") color = "black";
   else if (value === "erase") color = "white";
