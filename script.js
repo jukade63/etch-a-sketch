@@ -21,10 +21,11 @@ function changeColor(e) {
   if (value === "random") color = "random";
   else if (value === "black") color = "black";
   else if (value === "erase") color = "white";
-  else if (value === "reset")
+  else if (value === "reset") {
     grid
       .querySelectorAll("div")
       .forEach((block) => (block.style.background = "white"));
+  }
 }
 
 function buildEmptyGrid() {
@@ -39,6 +40,7 @@ function buildEmptyGrid() {
 }
 
 function drawPixel() {
+    console.log(click);
   if (click) {
     if (color === "random")
       this.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
@@ -46,8 +48,6 @@ function drawPixel() {
   }
 }
 
-document.querySelector('body').addEventListener('click', function(e){
-    if(e.target !== 'button') click = !click
-})
+document.querySelector("body").onclick = ()=> click = !click
 
 buildEmptyGrid();
