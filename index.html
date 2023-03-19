@@ -7,22 +7,24 @@
     <title>Etch-A-Sketch</title>
   </head>
   <body>
+    <h1>-- PIXEL ARTS --</h1>
     <div class="container">
-      <h1>Pixel Arts</h1>
-      <div class="flex-container">
-        <div class="options">
+      <div class="controls">
+        <div class="draw">
           <button value="black">Draw with <span>Black</span> pixels</button>
           <button value="random">Draw with <span>Random</span> colors</button>
+        </div>
+        <div class="actions">
           <button value="erase">Erase</button>
           <button value="reset">Reset</button>
-          <div>
+          <div class="output">
             <label for="myRange">Resolution</label>
             <input type="range" min="2" max="100" class="slider" id="myRange" />
             <output id="rangevalue">16 x 16</output>
           </div>
         </div>
-        <div class="grid"></div>
       </div>
+      <div class="grid"></div>
     </div>
 
     <script src="script.js"></script>

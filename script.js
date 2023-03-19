@@ -40,7 +40,6 @@ function buildEmptyGrid() {
 }
 
 function drawPixel() {
-    console.log(click);
   if (click) {
     if (color === "random")
       this.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
